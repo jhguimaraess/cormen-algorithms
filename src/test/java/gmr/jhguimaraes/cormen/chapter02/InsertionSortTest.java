@@ -14,4 +14,14 @@ public class InsertionSortTest {
         int[] esperado = {1, 2, 3, 4, 5, 6};
         assertArrayEquals(esperado, A);
     }
+
+    @Test
+    void shouldSortArrayInDescendingOrder(){
+        int[] A = {5, 2, 4, 6, 1, 3};
+
+        InsertionSort.sortDescending(A);
+
+        int[] esperado = {6, 5, 4, 3, 2, 1};
+        assertArrayEquals(esperado, A);
+    }
 }
